@@ -1,12 +1,13 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        Livro meuLivro = new Livro("O Hobbit", "J.R.R. Tolkien", 1937);
-        meuLivro.exibirInfoLivro();
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
+        Biblioteca minhaBiblioteca = new Biblioteca(); // Cria a biblioteca
+
+        Livro livro1 = new Livro("O Hobbit", "J.R.R. Tolkien", 1937); // Cria livro 1
+        Livro livro2 = new Livro("Dom Quixote", "Miguel de Cervantes", 1605); // Cria livro 2
+
+        minhaBiblioteca.adicionarLivro(livro1); // Adiciona à biblioteca
+        minhaBiblioteca.adicionarLivro(livro2); // Adiciona à biblioteca
+
+        minhaBiblioteca.listarLivros(); // Lista todos os livros cadastrados
     }
 }
