@@ -19,4 +19,13 @@ public class ClubeService {
         clube.setDataCriacao(clubeDTO.getDataCriacao());
         return clubeRepository.save(clube);
     }
+
+    public Clube atualizarClube(Long id, ClubeDTO clubeDTO) {
+
+        Clube clube = new Clube();
+        clube.setNomeClube(clubeDTO.getNomeClube());
+        clube.setSiglaEstado(clubeDTO.getSiglaEstado());
+        clube.setDataCriacao(clubeDTO.getDataCriacao());
+        return clubeRepository.save(clube);
+    }
 }

@@ -7,6 +7,8 @@ import jakarta.persistence.Id;
 import lombok.Getter;
 import lombok.Setter;
 
+// Essa classe faz referencia as colunas da tabela
+
 @Getter
 @Setter
 @Entity
